@@ -89,7 +89,8 @@ errors = 0
 data = []
 
 
-#### READ HTML 1.0
+#### READ HTML 1.2
+
 import requests  # import requests to exclude errors
 html = requests.get(url)
 soup = BeautifulSoup(html.text, 'lxml')
