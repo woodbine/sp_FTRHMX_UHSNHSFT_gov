@@ -109,12 +109,12 @@ for link in links:
                 continue
             csvMth = title.split(' ')[-2][:3]
             csvYr = title[-4:]
+            if 'y' in csvYr:
+                csvYr = '2016'
             if 'Publication of spend over 25k from 1 April to 30 Sept 2010' in title:
                 csvMth = 'Q0'
             csvMth = convert_mth_strings(csvMth.upper())
             data.append([csvYr, csvMth, url])
-
-
 
 #### STORE DATA 1.0
 
